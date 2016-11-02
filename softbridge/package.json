@@ -1,0 +1,19 @@
+{
+  "name": "softbridge",
+  "version": "0.1.0",
+  "description": "softbridge homepage",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "tinydew4",
+  "license": "CC0-1.0",
+  "bugs": {},
+  "homepage": "http://softbridge.co.kr",
+  "devDependencies": {
+    "electron": "1.4.0",
+    "electron-winstaller": "^2.3.4"
+  }
+}

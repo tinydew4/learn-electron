@@ -12,13 +12,16 @@ function createWindow() {
             width: 800,
             height: 660,
             show: false,
+            backgroundColor: '#FFC0CB',
         });
         Main.setMenu(null);
         Main.loadURL('http://translate.google.com/');
         Main.on('closed', () => {
             Main = null; // 창이 닫힐때 reference 제거
         });
-        Main.show();
+        Main.once('ready-to-show', () => {
+            Main.show();
+        });
     }
 }
 
